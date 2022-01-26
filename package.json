@@ -7,7 +7,7 @@
     "build": "webpack",
     "watch": "webpack --watch  --mode development"
   },
-  "author": "",
+  "author": "nino",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.67.0",

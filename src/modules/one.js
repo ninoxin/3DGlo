@@ -1,4 +1,4 @@
 const one = () => {
-    console.log('one.js');
+    console.log('one');
 }
 export default one
