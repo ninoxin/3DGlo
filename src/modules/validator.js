@@ -1,5 +1,6 @@
 const validator = () => {
 
+
     const textInput = document.getElementById('form1-name')
     const phoneInput = document.getElementById('form1-phone')
     const emailInput = document.getElementById('form1-email')
@@ -15,6 +16,11 @@ const validator = () => {
     const emailInput3 = document.getElementById('form3-email')
     const form3 = document.getElementById('form3')
 
+    
+    const calcCount = document.getElementById('calc-count')
+    const calcDay = document.getElementById('calc-day')
+    const calcSquare = document.getElementById('calc-square')
+    
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -42,6 +48,7 @@ const validator = () => {
             alert(' Заявка отправлена')
         }
     })
+
     form2.addEventListener('submit', (e) => {
         e.preventDefault()
         let isError = false
@@ -62,7 +69,7 @@ const validator = () => {
             alert(' Заявка отправлена')
         }
     })
-    
+
     form3.addEventListener('submit', (e) => {
         e.preventDefault()
         let isError = false
@@ -83,6 +90,20 @@ const validator = () => {
             alert(' Заявка отправлена')
         }
     })
+
+   
+    calcDay.addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D+/, "")
+    })
+
+    calcSquare.addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D+/, "")
+    })
+
+    calcCount.addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D+/, "")
+    })
+
 
 }
 export default validator
