@@ -4,6 +4,7 @@ import modal from './modules/modal'
 import validator from './modules/validator'
 import tabs from './modules/tads'
 import slider from './modules/slider'
+import calc from './modules/calc'
 
 
 
@@ -13,3 +14,4 @@ modal()
 validator()
 tabs()
 slider()
+calc()
